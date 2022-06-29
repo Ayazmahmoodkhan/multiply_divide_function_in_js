@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_10</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <h3 class="text-center">Multiply and Divide</h3>
+    <form class=" text-center">
+      1st Number : <input type="text" id="firstNumber"/><br>
+      2nd Number : <input type="text" id="secondNumber" class="mt-2"/><br>
+      <input type="button" onclick="multiplyBy()" value="Multiply" class="mt-2 ms-5"/>
+      <input type="button" onclick="divideBy()" value="Divide"/>
+    </form>
+    <p class="text-center mt-3">The Result is : 
+        <span id="result"></span>
+
+    </p>
+    <script>
+        function multiplyBy()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+        function divideBy()
+        {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("result").innerHTML = num1 / num2 ;
+        }
+    </script>
+    
+</body>
+</html>
